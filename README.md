@@ -2,7 +2,7 @@
 
 # ☁️ WeatherWise - Modern Weather App
 
-<img src="image.png" alt="WeatherWise Banner" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+
 
 **A sleek, responsive weather application built with Python Flask, HTML5, CSS3, and JavaScript. Get accurate forecasts, hourly & daily predictions, and unit conversions – all in a beautiful glass‑morphic UI.**
 
@@ -12,7 +12,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 [**🌐 Try Live Demo**](#) • [**Explore Features**](#-core-features) • [**Quick Start**](#-quick-start) • [**Screenshots**](#-screenshots) • [**API Documentation**](#-api-endpoints)
-
+<img src="image.png" alt="WeatherWise Banner" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 </div>
 
 ---
