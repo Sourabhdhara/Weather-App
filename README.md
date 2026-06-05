@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="Weather app/favicon.ico" alt="WeatherWise Logo">
+  <img src="favicon.png" alt="WeatherWise Logo">
   <h1>🌦️ WeatherWise 🌦️</h1>
   <p><b>A modern Tkinter desktop weather app with clean UI, hourly forecast, and 7-day outlook.</b></p>
 
@@ -149,4 +149,4 @@ Contributions are welcome!
 ---
 
 ## 📜 License
-Add your license information here (MIT / Apache-2.0 / etc.)
+This project is licensed under the MIT License - see the `LICENSE` file for details.
