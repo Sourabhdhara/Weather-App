@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://img.icons8.com/color/96/000000/weather.png" alt="WeatherWise Logo">
+  <img src="favicon.png" alt="WeatherWise Logo">
   <h1>🌦️ WeatherWise 🌦️</h1>
   <p><b>A modern Tkinter desktop weather app with clean UI, hourly forecast, and 7-day outlook.</b></p>
 
@@ -80,7 +80,7 @@ Uses a PyInstaller-compatible `resource_path()` and tries **PNG first** with **I
 | <img src="https://img.icons8.com/color/48/000000/python--v1.png" alt="Python"><br><b>Python</b> | Core app |
 | <img src="https://img.icons8.com/color/48/000000/html-5--v1.png" alt="Tkinter"><br><b>Tkinter / ttk</b> | UI |
 | <img src="https://img.icons8.com/color/48/000000/database.png" alt="Open-Meteo"><br><b>Open‑Meteo API</b> | Weather data |
-| <img src="https://img.icons8.com/color/48/000000/installer.png" alt="PyInstaller"><br><b>PyInstaller</b> | Build EXE |
+    <img src="https://img.icons8.com/color/48/000000/python--v1.png" alt="PyInstaller"><br><b>PyInstaller</b> | Build EXE |
 
 ---
 
