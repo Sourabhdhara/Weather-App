@@ -1,8 +1,8 @@
 <div align="center">
 
-# ☁️ WeatherWise - Modern Weather App
+# 🌤️ WeatherWise - Modern Weather App
 
-
+<img src="image.png" alt="WeatherWise Banner" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
 
 **A sleek, responsive weather application built with Python Flask, HTML5, CSS3, and JavaScript. Get accurate forecasts, hourly & daily predictions, and unit conversions – all in a beautiful glass‑morphic UI.**
 
@@ -11,8 +11,11 @@
 [![Open-Meteo](https://img.shields.io/badge/API-OpenMeteo-00b4d8?style=for-the-badge&logo=openstreetmap&logoColor=white)](https://open-meteo.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-[**🌐 Try Live Demo**](#) • [**Explore Features**](#-core-features) • [**Quick Start**](#-quick-start) • [**Screenshots**](#-screenshots) • [**API Documentation**](#-api-endpoints)
-<img src="image.png" alt="WeatherWise Banner" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+[**Explore Features**](#-core-features) •
+[**Quick Start**](#-quick-start) •
+[**API Documentation**](#-external-apis-used) •
+[**Project Structure**](#-project-architecture)
+
 </div>
 
 ---
@@ -27,7 +30,7 @@
 - 🔍 **City Search** – Search any city worldwide with fast geocoding.
 - 📊 **Unit Toggle** – Switch between °C/°F and km/h/mph on the fly.
 - ⏱️ **Hourly & Daily Forecasts** – Scrollable hourly cards and a clean 7‑day grid.
-- 🚀 **No Database** – Lightweight, runs with JSON and API calls.
+- 🚀 **No Database** – Lightweight, runs with external API calls.
 
 ---
 
