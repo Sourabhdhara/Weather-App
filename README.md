@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="Weather app/favicon.png" alt="WeatherWise Logo">
+  <img src="favicon.png" alt="WeatherWise Logo" width="64" height="64">
   <h1>🌦️ WeatherWise 🌦️</h1>
   <p><b>A modern Tkinter desktop weather app with clean UI, hourly forecast, and 7-day outlook.</b></p>
 
@@ -8,9 +8,9 @@
     <img src="https://img.shields.io/badge/Python-3.x-blue.svg?style=for-the-badge&logo=python&logoColor=white" alt="Python">
     <img src="https://img.shields.io/badge/Tkinter-GUI-success.svg?style=for-the-badge" alt="Tkinter">
     <img src="https://img.shields.io/badge/Open--Meteo-API-informational.svg?style=for-the-badge" alt="Open-Meteo">
-    <img src="https://img.shields.io/badge/PyInstaller-EXE-ready-orange.svg?style=for-the-badge" alt="PyInstaller">
-    <img src="https://img.shields.io/badge/Status-Icon_Safe-success.svg?style=for-the-badge" alt="Icon Safe">
+    <img src="https://img.shields.io/badge/PyInstaller-EXE_ready-orange.svg?style=for-the-badge" alt="PyInstaller">
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License">
+    <img src="https://img.shields.io/badge/Status-Icon_Safe-success.svg?style=for-the-badge" alt="Icon Safe">
   </p>
 
   <br>
