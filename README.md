@@ -1,6 +1,5 @@
 <div align="center">
-  <img src="image.png" alt="WeatherWise Logo">
-  <h1>🌦️ WeatherWise</h1>
+ 
   <p><b>Modern Weather Web App built with Flask.</b></p>
 
   <p>
@@ -9,7 +8,8 @@
     <img src="https://img.shields.io/badge/Open--Meteo-API-green.svg?style=for-the-badge" alt="Open-Meteo">
     <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License">
   </p>
-
+ <img src="image.png" alt="WeatherWise Logo">
+  <h1>🌦️ WeatherWise</h1>
   <br>
 
   <p><b>Search by city</b> • <b>Auto-detect location</b> • <b>Hourly (24h)</b> • <b>7-Day Forecast</b></p>
