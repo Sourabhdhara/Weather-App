@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="Weather app/favicon.png" alt="WeatherWise Logo">
+  <img src="Weather app/favicon.ico" alt="WeatherWise Logo">
   <h1>🌦️ WeatherWise 🌦️</h1>
   <p><b>A modern Tkinter desktop weather app with clean UI, hourly forecast, and 7-day outlook.</b></p>
 
