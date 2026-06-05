@@ -1,5 +1,6 @@
 <div align="center">
- 
+ <img src="https://img.icons8.com/color/96/000000/cloud--v1.png" alt="WeatherWise Logo">
+  <h1>🌦️ WeatherWise</h1>
   <p><b>Modern Weather Web App built with Flask.</b></p>
 
   <p>
