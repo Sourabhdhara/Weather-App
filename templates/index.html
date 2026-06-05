@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>WeatherWise - Modern Weather App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header with gradient -->
+        <header>
+            <div class="logo">
+                <i class="fas fa-cloud-sun"></i>
+                <h1>WeatherWise</h1>
+            </div>
+            <div class="header-controls">
+                <div class="search-box">
+                    <input type="text" id="cityInput" placeholder="Search city..." autocomplete="off">
+                    <button id="searchBtn"><i class="fas fa-search"></i></button>
+                </div>
+                <button id="autoDetectBtn" class="action-btn"><i class="fas fa-location-dot"></i> Auto Detect</button>
+                <button id="refreshBtn" class="action-btn"><i class="fas fa-rotate-right"></i> Refresh</button>
+            </div>
+        </header>
+
+        <!-- Unit Toggle Section -->
+        <div class="unit-bar">
+            <div class="unit-group">
+                <span class="unit-label">Temperature:</span>
+                <div class="toggle-group">
+                    <button data-unit="C" class="unit-btn active">°C</button>
+                    <button data-unit="F" class="unit-btn">°F</button>
+                </div>
+            </div>
+            <div class="unit-group">
+                <span class="unit-label">Wind Speed:</span>
+                <div class="toggle-group">
+                    <button data-wind="kmh" class="wind-btn active">km/h</button>
+                    <button data-wind="mph" class="wind-btn">mph</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs Navigation -->
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="current"><i class="fas fa-thermometer-half"></i> Current</button>
+            <button class="tab-btn" data-tab="hourly"><i class="fas fa-clock"></i> Hourly (24h)</button>
+            <button class="tab-btn" data-tab="daily"><i class="fas fa-calendar-week"></i> 7-Day Forecast</button>
+        </div>
+
+        <!-- Current Weather Tab -->
+        <div id="currentTab" class="tab-content active">
+            <div class="location-info">
+                <h2 id="locationName">--</h2>
+                <p id="updateTime"><i class="far fa-clock"></i> Last update: --</p>
+            </div>
+            <div class="current-weather-card">
+                <div class="main-weather">
+                    <div class="weather-icon" id="currentIcon">🌈</div>
+                    <div class="temp-section">
+                        <span id="currentTemp" class="temp-value">--</span>
+                        <span class="temp-unit" id="tempUnitSymbol">°C</span>
+                        <p id="conditionText" class="condition">--</p>
+                    </div>
+                </div>
+                <div class="weather-details">
+                    <div class="detail-item">
+                        <i class="fas fa-wind"></i>
+                        <span id="windValue">--</span>
+                        <span id="windUnit">km/h</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-tint"></i>
+                        <span id="humidityValue">--</span>
+                        <span>%</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-thermometer-half"></i>
+                        <span id="feelsLikeValue">--</span>
+                        <span id="feelsUnit">°C</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hourly Tab -->
+        <div id="hourlyTab" class="tab-content">
+            <div class="horizontal-scroll" id="hourlyContainer">
+                <div class="loading-spinner"><i class="fas fa-spinner fa-pulse"></i> Loading forecast...</div>
+            </div>
+        </div>
+
+        <!-- Daily Tab -->
+        <div id="dailyTab" class="tab-content">
+            <div class="daily-grid" id="dailyContainer">
+                <div class="loading-spinner"><i class="fas fa-spinner fa-pulse"></i> Loading forecast...</div>
+            </div>
+        </div>
+
+        <!-- Status Message -->
+        <div class="status-bar" id="statusMsg">
+            <i class="fas fa-info-circle"></i> Ready. Auto-detecting location...
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
