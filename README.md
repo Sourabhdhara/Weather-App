@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="image.png" alt="Quick Chat Logo">
+  <img src="https://img.icons8.com/color/96/000000/chat--v1.png" alt="Quick Chat Logo">
   <h1>✨ Quick Chat ✨</h1>
   <p><b>A modern, feature-rich, and real-time web page and mobile application built with Flask.</b></p>
 
