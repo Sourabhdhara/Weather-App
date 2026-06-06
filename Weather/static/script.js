@@ -37,7 +37,8 @@ function setStatus(msg, isError = false) {
     if (isError) console.error(msg);
 }
 
-// Weather icon mapping (WMO codes)
+// Weather icon mapping (WMO codes) - only for hourly/daily fallback
+// For current weather we use backend's icon (which handles night)
 function getWeatherIcon(code) {
     const icons = {
         0: "☀️", 1: "🌤️", 2: "🌤️", 3: "☁️",
@@ -90,9 +91,10 @@ function updateUI() {
     const windK = current.wind_kmh;
     const feelsC = current.feels_like_c;
     const humidity = current.humidity;
-    const weatherCode = current.weathercode;
-    const iconEmoji = getWeatherIcon(weatherCode);
-    const conditionDesc = getWeatherDescription(weatherCode);
+    
+    // Use icon and condition from backend (already day/night aware)
+    const iconEmoji = current.icon;          // from backend
+    const conditionDesc = current.condition; // from backend
     
     const convertedTemp = convertTemp(tempC);
     const convertedWind = convertWind(windK);
@@ -130,7 +132,7 @@ function updateHourlyUI() {
         const tempC = item.temp;
         const windK = item.wind;
         const code = item.weathercode;
-        const icon = getWeatherIcon(code);
+        const icon = getWeatherIcon(code);  // hourly uses generic icons (day assumed)
         const tempVal = convertTemp(tempC);
         const windVal = convertWind(windK);
         const tempUnitSym = tempUnit === "C" ? "°C" : "°F";
@@ -162,7 +164,7 @@ function updateDailyUI() {
         const minC = item.min_temp;
         const windK = item.wind;
         const code = item.weathercode;
-        const icon = getWeatherIcon(code);
+        const icon = getWeatherIcon(code);  // daily uses generic icons
         const maxVal = convertTemp(maxC);
         const minVal = convertTemp(minC);
         const windVal = convertWind(windK);
